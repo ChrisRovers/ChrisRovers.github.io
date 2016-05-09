@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Begeodan
+Description: A two-column, fixed-width design.
+Version    : 1.0
+Released   : 20071213
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Any Great Practical Utility</title>
+<meta name="keywords" content="programming blog chris rovers philosophy" />
+<meta name="description" content="Any Great Practical Utility - Thoughts on Programming by Chris Rovers" />
+<link href="default.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<!-- start header -->
+<div id="header">
+	<h1><a href="index.html">Any Great Practical Utility</a></h1>
+	<p>Thoughts on Programming by Chris Rovers</p>
+</div>
+<!-- end header -->
+<!-- start page -->
+<div id="page">
+	<!-- start content -->
+	<div id="content">
+    <h2> Other People's Software</h2>
+<i>2016-05-09</i>
+<p>This post is about none of the things on my post list from the 'beginnings' post,
+but it interested me, so I'm writing about it anyways.</p>
+<p>The thing that struck me as I went through the motions of figuring out a place to
+put this blog, figuring out what technology to use to produce it and so on is just
+how much software we all need to learn, day in and day out.  At work, it is just
+kind of expected, so you don't necessarily put it all together, but we do end up
+learning a ridiculous amount.  Over the last week, for specific work issues, I learned :</p>
+<ul>
+<li>more about Angular2's routing, default routes and async routes</li>
+<li>a new version of nmap and its windows wrapper/launcher</li>
+<li>fuzzing in ZAP Attack Proxy</li>
+<li>Burp Suite's insane UI</li>
+<li>the zxcvbn password entropy calculation library (and its Java port)</li>
+<li>nginx configuration and CORS handling</li>
+</ul>
+<p>There's probably stuff there that I've forgotten I had to deal with, too.  The thing is, 
+none of those pieces of software are that difficult, but each has its own cost. I don't
+mean dollars - though Burp Suite is paid software, the rest of them are not - but mental
+cost.  Everytime you learn a piece of technology, you end up having to squish the way
+you think about the topic into the way the program author(s) thought about it. Sometimes, there's
+a pretty good match.  And sometimes (like with me and Burp Suite's UI), there just isn't. But
+that's the way it goes - when you are working on a piece of 'enterprise' software and the
+deadlines are coming fast, you do things the sensible way, by avoiding the 'not invented here syndrome' and by
+'not inventing the wheel.' </p>
+<p>And that might make sense in a situation where other people need to be able to use the stuff
+you built, where you don't have time to fully document a customization or a custom piece of
+software.. but it was lovely and freeing to realize it really didn't make any sense in the context 
+of this blog.</p>
+<p>I had decided early on that I wanted to use static html generation as the basic technology
+behind the blog, coupled with something like Disqus to handle comments where I wanted them.  So I started
+poking around at static website generators - Hugo, Jekyll, Hyde, some others.  None of them were
+bad at all, but everytime I started down a path to make a website with one, I just.. petered off.  There was
+that mental cost of absorbing the docs and none of them quite fit they way I considered the situation, and without
+the driving need of a paying job, it caused me to keep punting on creating the website.  That effort of 
+cramming my brain into someone else's paradigm just wasn't worth it. </p>
+<p>That's why it was such a relief to realize I didn't need to care about anyone maintaining this
+thing other than me.  I had to be reasonably kind to my future self, but he was the only
+consumer of the infrastructure side.  And future me, well, he probably can manage to cram
+his brain into the way current me thinks.  And that meant that I could just write my
+own generator.  It doesn't take much to do a static website generator - if you are reading this, 
+it means that I have finished, after all.  At the time of this writing, it is pretty much done,
+except for adding Disqus support, and is less than 180 lines of Python.  And it was so much
+MORE FUN to do it this way.  From a mental cost perspective, it was better than free - it
+was enjoyable.</p>
+<p>It isn't the most full featured generator in the world - it is designed to generate this website.
+It uses templates, of course, since I wanted to be able to edit the HTML reasonably (and I started 
+with a Creative Commons css/html template), and nobody likes writing HTML in print statements.<br />
+But it makes lots of assumptions that Hugo and its ilk cannot - and that means that it is 
+far, far simpler.  Cheap to think about.  I doubt I'll release it - just because
+it is cheap for me, doesn't mean it'll be cheap for you.  But that's kind of the point - when possible,
+when you can, consider the mental cost of different paths and take the lovely, fun, free path that goes
+<em>your own way</em>. </p>
+<p>-cdr</p>
+	</div>
+	<!-- end content -->
+	<!-- start sidebar -->
+	<div id="sidebar">
+		<ul>
+			<li>
+				<h2><a href="allposts.html">Posts</a></h2>
+				<ul>
+          
+<li><a href="otherpeoplessoftware.html"> Other People's Software</a></li>
+<li><a href="abeginning.html"> A Beginning...</a></li>
+				</ul>
+			</li>
+			<li>
+				<h2><a href="alltags.html">Tags</a></h2>
+				<ul>
+          
+<li><a href="tagpage-administrivia.html">administrivia</a></li>
+<li><a href="tagpage-philosophy.html">philosophy</a></li>
+<li><a href="tagpage-programming.html">programming</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+	<!-- end sidebar -->
+</div>
+<!-- end page -->
+<div id="footer">
+	<p>&copy;2016 Chris Rovers. <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. 
+  <p>Design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a> &nbsp;&bull;&nbsp; Icons by <a href="http://www.famfamfam.com/">FAMFAMFAM</a>.</p>
+</div>
+</html>
