@@ -8,7 +8,7 @@ Released for free under a Creative Commons Attribution 2.5 License
 body {
 	margin: 0;
 	padding: 0;
-	background:  #455900 url(images/img01.gif) no-repeat top center;
+	background:  #455900;
 	font-size: 13px;
 	color: #EBE6E3;
 }
@@ -64,10 +64,12 @@ a:hover {
 /* Header */
 
 #header {
-	width: 760px;
+	width: 80%;
 	height: 280px;
 	margin: 0 auto;
-	background: url(images/img01.jpg) no-repeat right top;
+  background-image: url(images/headertile.png), url(images/headerimage.png);
+  background-position: left top, right top;
+  background-repeat: repeat, no-repeat; 
 }
 
 #header h1, #header p {
@@ -91,7 +93,7 @@ a:hover {
 /* Page */
 
 #page {
-	width: 760px;
+	width: 80%;
 	margin: 0 auto;
 }
 
@@ -99,7 +101,7 @@ a:hover {
 
 #content {
 	float: left;
-	width: 460px;
+	width: 60%;
 }
 
 .post {
@@ -135,7 +137,7 @@ a:hover {
 
 #sidebar {
 	float: right;
-	width: 240px;
+	width: 30%;
 }
 
 #sidebar ul {
